@@ -1,0 +1,40 @@
+body {
+    background-image: url('assets/pattern\ 313.gif');
+    
+    background-repeat: repeat;
+    
+    background-position: top left;
+}
+
+#vocaloid-window {
+    font-size: 16px;
+    position: absolute;
+    top: 50px; 
+    left: 50px; 
+}
+
+#github-window {
+    font-size: 16px;
+    position: absolute;
+    top: 200px; 
+    left: 400px; 
+}
+#instagram-window {
+    font-size: 16px;
+    position: absolute;
+    top: 350px; 
+    left: 50px; 
+}
+#fandoms-window {
+    font-size: 20px;
+    position: absolute;
+    top: 200px; 
+    left: 50px; 
+}
+#whoami-window{
+    font-size: 30px;
+    position: absolute;
+    top: -500px; 
+    left: 1200px; 
+}
+
