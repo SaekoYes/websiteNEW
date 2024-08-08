@@ -1,6 +1,6 @@
 name: Deploy to neocities
 
-# only run on changes to main. Use main or master depending on whatever your default branch is called.
+# only run on changes to main
 on:
   push:
     branches:
@@ -16,11 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
     # When the dist_dir is ready, deploy it to neocities
-    - name: Deploy to neocities
-      uses: bcomnes/deploy-to-neocities@v2
+    - name: Deploy to Neocities
+      uses: bcomnes/deploy-to-neocities@v2.0.2
       with:
         api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-        cleanup: false
+        cleanup: true
         dist_dir: public
